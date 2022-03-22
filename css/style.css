@@ -1,0 +1,179 @@
+:root{
+   --layer-color : rgba(214, 46, 51 , 0.6);
+   --main-color : rgba(214, 46, 51); 
+}
+body{
+    overflow-y: hidden;
+}
+
+
+
+#header{
+    background-image: url(../img/events-heavenly-header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.layer-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--layer-color)
+}
+
+/************* loading screen ***************/
+#loading{
+    display:flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #1ABC9C;
+    z-index: 9999999;
+}
+
+
+/* loading spinner */
+.spinner {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 100px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+
+
+/* ***************navBar****************** */
+/* #main-nav{
+    
+    overflow: hidden;
+} */
+.nav{
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    z-index: 999999999999999999999999999999;
+    display: none;
+    background-color: black;
+    transition: background-color .5s;
+}
+.nav a
+{
+    font-size: 25px;
+}
+
+.icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.menu-bar{
+    position: absolute;
+    top: 50%;
+    left: 0; 
+    /* padding: 0px 10px; */
+    color: #fff;
+    cursor: pointer;
+   
+}
+/* ********************************************* */
+
+
+
+
+
+/* ***********Singers************* */
+
+#singers, h2
+{
+    color: tomato;
+}
+
+
+/* *********Duratin******** */
+
+#duration{
+    background-image: url(../img/invitation-2508607__340.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.layer-duration{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--layer-color);
+    z-index: 9999;
+}
+
+/* icon footer */
+.icon{
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-color: rgb(153, 153, 153);
+    transition: all .3s;
+}
+
+.icon:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+
+
+
+/* test */
+.item{
+    display: none;
+}
+
+/* btn */
+#btnUp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99999;
+    display: none;
+}
